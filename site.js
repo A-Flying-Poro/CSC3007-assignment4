@@ -69,9 +69,8 @@ async function onLoad() {
         .on('mouseover', (event, data) => {
             tooltip.style('opacity', 1);
             d3.selectAll(`span[data-json-key]`)
-                .each(datum => {
+                .each(function (d) {
                     const span = d3.select(this)
-                    console.log(span)
                     span.text(data[span.attr('data-json-key')])
                 })
         })
