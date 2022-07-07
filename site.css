@@ -44,11 +44,7 @@ body.dark-mode {
     opacity: 0;
 }
 
-#legendTitle {
+.legend-label {
     fill: white;
     font-size: large;
-}
-
-#legendColour {
-    border: 1px solid black;
 }
